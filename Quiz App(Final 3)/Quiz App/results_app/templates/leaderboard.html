@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Leaderboard</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1c1c1c, #2c2c54);
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .leaderboard-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 25px;
+      font-size: 2.4rem;
+      color: #f8f9fa;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    }
+
+    /* Tabs */
+    .category-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .tab-button {
+      padding: 10px 20px;
+      background-color: #2e2e3a;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: all 0.3s;
+    }
+
+    .tab-button.active {
+      background-color: #007bff;
+      font-weight: bold;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    }
+
+    .tab-button:hover {
+      background-color: #444466;
+    }
+
+    /* Welcome message */
+    .welcome-message {
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #f0f8ff;
+      color: #333;
+      border-radius: 8px;
+    }
+
+    /* Leaderboard Table */
+    .leaderboard-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .leaderboard-table th {
+      background-color: #007bff;
+      color: white;
+      padding: 14px;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    .leaderboard-table td {
+      padding: 12px;
+      font-size: 1rem;
+      background: #2e2e3a;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .leaderboard-table tr:nth-child(even) td {
+      background: #3a3a4d;
+    }
+
+    .leaderboard-table tr:hover td {
+      background-color: #444466;
+    }
+
+    .current-user {
+      background-color: #e6f3ff !important;
+      font-weight: bold;
+    }
+
+    .current-user td {
+      background-color: #e6f3ff !important;
+      color: #333;
+    }
+
+    .you-badge {
+      color: #007bff;
+      font-size: 0.9em;
+      font-weight: bold;
+    }
+
+    .rank {
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+
+    .rank.first { color: #ffd700; }   /* Gold */
+    .rank.second { color: #c0c0c0; } /* Silver */
+    .rank.third { color: #cd7f32; }  /* Bronze */
+
+    .score {
+      font-weight: bold;
+    }
+
+    .perfect-score {
+      color: #28a745;
+    }
+
+    .category-content {
+      display: none;
+    }
+
+    .category-content.active {
+      display: block;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Empty State */
+    .empty-leaderboard {
+      text-align: center;
+      padding: 40px;
+      color: #ccc;
+      font-style: italic;
+      background: #2e2e3a;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+    }
+
+    /* Buttons */
+    .nav-buttons {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .nav-button {
+      padding: 12px 22px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+      transition: transform 0.2s, background-color 0.3s;
+    }
+
+    .nav-button:hover {
+      background-color: #0056b3;
+      transform: translateY(-2px);
+    }
+
+    .results-btn {
+      background-color: #6c757d;
+    }
+
+    .results-btn:hover {
+      background-color: #5a6268;
+    }
+  </style>
+</head>
+<body>
+  <div class="leaderboard-container">
+    <h1>🏆 Quiz Leaderboard</h1>
+
+    <!-- Category Tabs -->
+    <div class="category-tabs">
+      <button class="tab-button active" onclick="showCategory('Overall')">Overall</button>
+      <button class="tab-button" onclick="showCategory('Science')">Science</button>
+      <button class="tab-button" onclick="showCategory('History')">History</button>
+      <button class="tab-button" onclick="showCategory('Sports')">Sports</button>
+      <button class="tab-button" onclick="showCategory('Movies and TV')">Movies & TV</button>
+    </div>
+
+    {% if session.get('username') %}
+    <div class="welcome-message">
+      <p>Hello, {{ session['username'] }}! Welcome to the leaderboards! 🎯</p>
+    </div>
+    {% endif %}
+
+    {% for category, scores in leaderboard_data.items() %}
+    <div id="{{ category|replace(' ', '_') }}" class="category-content {{ 'active' if category == 'Overall' }}">
+      <h2>{{ category }} Top Performers</h2>
+
+      {% if scores %}
+        <table class="leaderboard-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Username</th>
+              <th>Category</th>
+              <th>Score</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for score in scores %}
+              {% set is_you = session.get('username') and score.username and session['username'] == score.username %}
+              <tr class="{{ 'current-user' if is_you }}">
+                <td class="rank {{ 'first' if loop.index == 1 else 'second' if loop.index == 2 else 'third' if loop.index == 3 }}">
+                  {{ '🥇' if loop.index == 1 else '🥈' if loop.index == 2 else '🥉' if loop.index == 3 else loop.index }}
+                </td>
+
+                <td class="username">
+                  {{ score.username or "Anonymous" }}
+                  {% if is_you %}<span class="you-badge">(You)</span>{% endif %}
+                </td>
+
+                <td>{{ score.category }}</td>
+                <td class="score {{ 'perfect-score' if score.score == 10 }}">{{ score.score }}/10</td>
+                <td>{{ score.date.strftime('%Y-%m-%d %H:%M') if score.date else '' }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% else %}
+        <div class="empty-leaderboard">
+          <p>No quiz results available for {{ category }} yet!</p>
+          <p>Be the first to take a quiz and claim the top spot! 🎯</p>
+        </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+      <a href="{{ url_for('results_app.results') }}" class="nav-button results-btn">📊 View My Results</a>
+      <a href="/" class="nav-button">🏠 Back to Home</a>
+    </div>
+  </div>
+
+  <script>
+    function showCategory(category) {
+      // Hide all category content
+      const contents = document.querySelectorAll('.category-content');
+      contents.forEach(content => {
+        content.classList.remove('active');
+      });
+
+      // Remove active class from all tab buttons
+      const tabs = document.querySelectorAll('.tab-button');
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+      });
+
+      // Show selected category
+      const categoryId = category.replace(' ', '_');
+      document.getElementById(categoryId).classList.add('active');
+
+      // Activate clicked tab
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multi-Category Quiz</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+  <!-- Start Header -->
+  <header id="Home">
+    <div class="overlay">
+      <img src="{{ url_for('static', filename='images/bg4.jpeg') }}" alt="Quiz Time Image" class="header-image">
+    </div>
+    <div class="lay">
+      <!-- Start Nav -->
+      <nav class="navbar">
+        <div class="container">
+          <div class="logo">
+            <img src="{{ url_for('static', filename='images/q6.jpeg') }}" alt="Logo" width="50" height="40">
+            <span class="project-name">Quiz App</span>
+          </div>
+          <button class="navbar-toggler" id="navbar-toggler">
+            <span class="bar-ico">&#9776;</span>
+          </button>
+          <div class="nav-links" id="nav-links">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#categories">Categories</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+              
+              <!-- ADD THESE NEW NAVIGATION LINKS -->
+              {% if session.get('username') %}
+                <li><a href="{{ url_for('results_app.results') }}">📊 My Results</a></li>
+                <li><a href="{{ url_for('results_app.leaderboard') }}">🏆 Leaderboard</a></li>
+              {% endif %}
+
+              {% if session.get('username') %}
+                <li class="username">Hello, {{ session['username'] }}!</li>
+                <li><a href="{{ url_for('auth_app.logout') }}" id="hv">Logout</a></li>
+              {% else %}
+                <li><a href="{{ url_for('auth_app.login') }}" id="hv">Login</a></li>
+                <li><a href="{{ url_for('auth_app.signup') }}" id="hv">Signup</a></li>
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Nav -->
+
+      <!-- Start Slider -->
+      <section class="slider" id="home">
+        <div class="slider-content">
+          <div class="caption">
+            <h3>Welcome to</h3>
+            <h1>THE MULTI-CATEGORY QUIZ APPLICATION</h1>
+            <h4></h4>
+          </div>
+        </div>
+      </section>
+      <!-- End Slider -->
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Main Content Section -->
+  <main>
+    <section id="categories" class="categories">
+      <div class="container">
+        <h2>Categories of Quizzes</h2>
+
+        <div class="categories-container">
+          <!-- Science -->
+          <div class="category-card">
+            <img src="{{ url_for('static', filename='images/science1.jpeg') }}" alt="Science Quiz">
+            <h3>Science</h3>
+            <a
+              href="{{ url_for('science_app.index') }}"
+              class="btn quiz-link"
+              data-quiz="science"
+            >
+              Take Quiz
+            </a>
+          </div>
+
+          <!-- History -->
+          <div class="category-card">
+            <img src="{{ url_for('static', filename='images/history2.jpeg') }}" alt="History Quiz">
+            <h3>History</h3>
+            <a
+              href="{{ url_for('history_app.index') }}"
+              class="btn quiz-link"
+              data-quiz="history"
+            >
+              Take Quiz
+            </a>
+          </div>
+
+          <!-- Movies -->
+          <div class="category-card">
+            <img src="{{ url_for('static', filename='images/movies2.jpeg') }}" alt="Movies Quiz">
+            <h3>Movies</h3>
+            <a
+              href="{{ url_for('movies_app.index') }}"
+              class="btn quiz-link"
+              data-quiz="movies"
+            >
+              Take Quiz
+            </a>
+          </div>
+
+          <!-- Sports -->
+          <div class="category-card">
+            <img src="{{ url_for('static', filename='images/sport2.jpeg') }}" alt="Sports Quiz">
+            <h3>Sport</h3>
+            <a
+              href="{{ url_for('sports_app.index') }}"
+              class="btn quiz-link"
+              data-quiz="sports"
+            >
+              Take Quiz
+            </a>
+          </div>
+        </div>
+
+        <!-- ADD THIS NEW SECTION FOR QUICK ACCESS -->
+        {% if session.get('username') %}
+        <div class="quick-access" style="text-align: center; margin-top: 40px;">
+          <h3>Quick Access</h3>
+          <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
+            <a href="{{ url_for('results_app.results') }}" class="btn" style="background: #6c757d; padding: 12px 24px; border-radius: 8px; color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+              <i class="fas fa-chart-bar"></i> View My Results
+            </a>
+            <a href="{{ url_for('results_app.leaderboard') }}" class="btn" style="background: #28a745; padding: 12px 24px; border-radius: 8px; color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+              <i class="fas fa-trophy"></i> View Leaderboard
+            </a>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </section>
+  </main>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <p id="header">
+        We offer a variety of quiz categories and features to enhance your learning and
+        entertainment experience. Our goal is to provide fun, engaging, and interactive quizzes across multiple topics.
+      </p>
+      <div class="service-list">
+        <div class="service-item">
+          <h3>Quiz Creation</h3>
+          <p>Create quizzes on various topics, including science, history, sports, movies, and more.
+            Customize your quiz with multiple-choice or true/false questions.</p>
+        </div>
+        <div class="service-item">
+          <h3>Real-Time Score Tracking</h3>
+          <p>Track your progress with real-time scoring as you take quizzes. Monitor your performance
+            instantly and aim for better results with every attempt.</p>
+        </div>
+        <div class="service-item">
+          <h3>Leaderboard</h3>
+          <p>Compete with other players and see your rank on the leaderboard. Top scorers will be featured
+            to encourage healthy competition.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog">
+    <div class="container">
+      <h2>Our Team</h2>
+      <p>Meet the amazing team behind the Quiz App. We are passionate about quizzes and making learning fun!</p>
+      <div class="team-members">
+    
+        
+        <div class="team-member">
+          
+          <img src="{{ url_for('static', filename='images/me3.jpeg') }}" alt="Member 1">
+          <h3>Moamen</h3>
+          <p>Member 1</p>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- Start Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="heading text-center">
+        <h2>Get In Touch</h2>
+        <div class="divider"></div>
+        <p>
+          We are here to help! Whether you have a question about our services, need advice, or simply want
+          to connect, feel free to reach out. Our team is always ready to provide the support and
+          information you need.
+        </p>
+      </div>
+      <div class="content">
+        <div class="info-section">
+          <h3>Reach out to our expert consultants for personalized advice and solutions.</h3>
+          <div class="contact-item">
+            <i class="fas fa-map"></i>
+            <div class="text">
+              <h4>Address</h4>
+              <p>1235 Tahrir Square, Downtown Cairo, Cairo Governorate, Egypt</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div class="text">
+              <h4>Phone</h4>
+              <p>+20 1064142965(whats) / +20 1055763843</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div class="text">
+              <h4>Email</h4>
+              <p><a href="mailto:Mohamedmoamen@gmail.com">mohamedmoamen272@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <form id="form">
+            <input id="userName" type="text" placeholder="Your Name">
+            <p class="error-message" id="userNameReq">Please enter your name.</p>
+
+            <input id="userEmail" type="email" placeholder="Your Email">
+            <p class="error-message" id="userEmailReq">Please enter a valid email address.</p>
+
+            <input id="userPhone" type="number" placeholder="Your Phone Number">
+            <p class="error-message" id="userPhoneReq">Phone number is required.</p>
+
+            <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+            <p class="error-message" id="messageReq">Please enter a message.</p>
+
+            <button disabled id="btnSubmit" type="submit">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <div class="subscribe">
+        <input id="footerEmail" type="email" placeholder="Enter your email to subscribe...">
+        
+        <button id="clearButton" disabled>Subscribe</button>
+      </div>
+
+      <div class="footer-content">
+        <p>&copy; 2025 Quiz App. Designed by Mohamed Moamen . All rights reserved.</p>
+
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" class="social-icon">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://google.com" target="_blank" class="social-icon">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script>
+    window.APP_IS_LOGGED_IN = "{ {'true' if session.get('username') else 'false' }}";
+    window.APP_LOGIN_URL   = "{{ url_for('auth_app.login') }}";
+  </script>
+
+  <!-- JS -->
+  <script src="{{ url_for('static', filename='js/home.js') }}" defer></script>
+</body>
+</html>

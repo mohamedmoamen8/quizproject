@@ -1,0 +1,92 @@
+/* signup.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #0546a2, #02214f);
+  color: #fff;
+  text-align: center;
+}
+h1 {
+  margin-top: 50px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+form {
+  margin: 30px auto;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  background: linear-gradient(135deg, #1f64cc, #0c1f39);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0e0c7b, #0027d6);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+li {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+li.success {
+  background-color: #4caf50;
+}
+
+li.error {
+  background-color: #f44336;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 185px;
+}
+
+a {
+  color: #ffec61;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

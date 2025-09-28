@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./Quiz App/auth_app"
+    ]
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('movies_app.static', filename='css/movies.css') }}">
+</head>
+<body style="background: url('{{ url_for('movies_app.static', filename='images/movie.jpeg') }}');">
+    <div class="quiz-container">
+        <h1>movies Quiz</h1>
+        <div id="timer-container">
+            <p>Time Remaining: <span id="timer">30</span> seconds</p>
+        </div>
+        <div id="question-container">
+            <p id="question">Loading question...</p>
+            <div id="answers-container">
+                <!-- Answer buttons will be populated dynamically -->
+            </div>
+        </div>
+        <div id="result" class="hidden">
+            <p id="score">Your Score: 0</p>
+            <button id="restart" onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+        
+        <!-- New Elegant Incorrect Answers Display -->
+        <div id="incorrect-answers-container" class="hidden">
+            <h3>Incorrect Answers:</h3>
+            <div id="incorrect-answers-list">
+                <!-- The incorrect answers will be displayed here dynamically -->
+            </div>
+        </div>
+        
+        <div id="quiz-complete" class="hidden">
+     <h2>Quiz Completed!</h2>
+     <p>Your Score: <span id="finalScore"></span></p>
+
+     <!-- Hidden form to submit results -->
+     <form action="{{ url_for('results_app.quiz') }}" method="POST" id="resultForm">
+        <input type="hidden" name="category" value="Movies and TV">
+        <input type="hidden" name="score" id="scoreInput">
+        <button type="submit" class="btn btn-success">Save Result & View Leaderboard</button>
+     </form>
+
+     <a href="{{ url_for('results_app.results') }}" class="btn btn-info">View My Results</a>
+    </div>
+
+    <script src="{{ url_for('movies_app.static', filename='js/movies.js') }}"></script>
+    <script>
+    // Assume you already calculate score in JS
+    const score = window.finalQuizScore || 0; 
+    document.getElementById("finalScore").textContent = score;
+    document.getElementById("scoreInput").value = score;
+</script>
+</body>
+</html>

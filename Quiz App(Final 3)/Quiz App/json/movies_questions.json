@@ -1,0 +1,203 @@
+[
+    {
+      "question": "Which actor starred as the Joker in 'The Dark Knight'?",
+      "answers": [
+        "Heath Ledger",
+        "Jared Leto",
+        "Jack Nicholson",
+        "Christian Bale"
+      ],
+      "correctAnswer": "Heath Ledger"
+    },
+    {
+      "question": "Who directed the movie 'Inception'?",
+      "answers": [
+        "Christopher Nolan",
+        "Steven Spielberg",
+        "Martin Scorsese",
+        "Quentin Tarantino"
+      ],
+      "correctAnswer": "Christopher Nolan"
+    },
+    {
+      "question": "Which movie won the Oscar for Best Picture in 1994?",
+      "answers": [
+        "Forrest Gump",
+        "The Shawshank Redemption",
+        "Pulp Fiction",
+        "The Lion King"
+      ],
+      "correctAnswer": "Forrest Gump"
+    },
+    {
+      "question": "What is the name of the fictional city in 'The Dark Knight'?",
+      "answers": [
+        "Gotham City",
+        "Metropolis",
+        "Starling City",
+        "Central City"
+      ],
+      "correctAnswer": "Gotham City"
+    },
+    {
+      "question": "Who won the Oscar for Best Actor in 2020?",
+      "answers": [
+        "Joaquin Phoenix",
+        "Brad Pitt",
+        "Leonardo DiCaprio",
+        "Adam Driver"
+      ],
+      "correctAnswer": "Joaquin Phoenix"
+    },
+    {
+      "question": "Which movie features the character 'Forrest Gump'?",
+      "answers": [
+        "Forrest Gump",
+        "The Green Mile",
+        "Cast Away",
+        "Saving Private Ryan"
+      ],
+      "correctAnswer": "Forrest Gump"
+    },
+    {
+      "question": "Which actor played Tony Stark in the Marvel Cinematic Universe?",
+      "answers": [
+        "Robert Downey Jr.",
+        "Chris Hemsworth",
+        "Mark Ruffalo",
+        "Chris Evans"
+      ],
+      "correctAnswer": "Robert Downey Jr."
+    },
+    {
+      "question": "What year was 'The Matrix' released?",
+      "answers": [
+        "1999",
+        "2000",
+        "1997",
+        "2002"
+      ],
+      "correctAnswer": "1999"
+    },
+    {
+      "question": "Who voiced the character of Simba in 'The Lion King' (1994)?",
+      "answers": [
+        "Matthew Broderick",
+        "James Earl Jones",
+        "Robin Williams",
+        "Nathan Lane"
+      ],
+      "correctAnswer": "Matthew Broderick"
+    },
+    {
+      "question": "Which movie features the famous line 'Here's looking at you, kid'?",
+      "answers": [
+        "Casablanca",
+        "Gone with the Wind",
+        "The Godfather",
+        "Citizen Kane"
+      ],
+      "correctAnswer": "Casablanca"
+    },
+    {
+      "question": "Who directed the 'Jurassic Park' films?",
+      "answers": [
+        "Steven Spielberg",
+        "James Cameron",
+        "George Lucas",
+        "Ridley Scott"
+      ],
+      "correctAnswer": "Steven Spielberg"
+    },
+    {
+      "question": "Which movie is based on a novel by J.R.R. Tolkien?",
+      "answers": [
+        "The Lord of the Rings",
+        "Harry Potter",
+        "The Chronicles of Narnia",
+        "Eragon"
+      ],
+      "correctAnswer": "The Lord of the Rings"
+    },
+    {
+      "question": "Who played the role of Jack Dawson in 'Titanic'?",
+      "answers": [
+        "Leonardo DiCaprio",
+        "Johnny Depp",
+        "Brad Pitt",
+        "Tom Cruise"
+      ],
+      "correctAnswer": "Leonardo DiCaprio"
+    },
+    {
+      "question": "What is the name of the fictional planet in 'Avatar'?",
+      "answers": [
+        "Pandora",
+        "Arrakis",
+        "Tatooine",
+        "Wakanda"
+      ],
+      "correctAnswer": "Pandora"
+    },
+    {
+      "question": "Which movie features a character named 'Forrest Gump' running across America?",
+      "answers": [
+        "Forrest Gump",
+        "The Pursuit of Happyness",
+        "Cast Away",
+        "Rain Man"
+      ],
+      "correctAnswer": "Forrest Gump"
+    },
+    {
+      "question": "Which film won the Academy Award for Best Picture in 1999?",
+      "answers": [
+        "Shakespeare in Love",
+        "Saving Private Ryan",
+        "American Beauty",
+        "The Green Mile"
+      ],
+      "correctAnswer": "Shakespeare in Love"
+    },
+    {
+      "question": "Which actor starred as the character 'Indiana Jones'?",
+      "answers": [
+        "Harrison Ford",
+        "Tom Hanks",
+        "Bruce Willis",
+        "Mel Gibson"
+      ],
+      "correctAnswer": "Harrison Ford"
+    },
+    {
+      "question": "Which animated film features a talking wooden puppet named Pinocchio?",
+      "answers": [
+        "Pinocchio",
+        "Cinderella",
+        "Beauty and the Beast",
+        "Snow White"
+      ],
+      "correctAnswer": "Pinocchio"
+    },
+    {
+      "question": "Who directed the film 'Pulp Fiction'?",
+      "answers": [
+        "Quentin Tarantino",
+        "Steven Spielberg",
+        "Martin Scorsese",
+        "Stanley Kubrick"
+      ],
+      "correctAnswer": "Quentin Tarantino"
+    },
+    {
+      "question": "Which movie features a time-traveling DeLorean?",
+      "answers": [
+        "Back to the Future",
+        "The Time Machine",
+        "Timecop",
+        "Looper"
+      ],
+      "correctAnswer": "Back to the Future"
+    }
+  ]
+  

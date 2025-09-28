@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Multi-Category Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('auth_app.static', filename='css/login.css') }}">
+
+
+</head>
+
+<body>
+    <h1>Login</h1>
+
+    <!-- Flash messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    <ul>
+        {% for category, message in messages %}
+        <li class="{{ category }}">{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+
+    <form id="loginForm" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" placeholder="Your Username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Your Password" required><br><br>
+
+        <button type="submit" id="btnSubmit" disabled>Login</button>
+    </form>
+
+
+    <p>Don't have an account? <a href="{{ url_for('auth_app.signup') }}">Sign up here</a></p>
+    <script src="{{ url_for('auth_app.static', filename='js/login.js') }}"></script>
+
+</body>
+
+</html> 

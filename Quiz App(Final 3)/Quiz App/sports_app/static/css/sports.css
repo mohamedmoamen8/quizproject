@@ -1,0 +1,218 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('/static/images/movie.jpeg');
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.quiz-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.quiz-container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(to right, #fff, #3f8e9f); /* Sports-inspired gradient */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#timer-container p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+#question {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+#answers-container button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Sports green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#answers-container button:hover {
+    background-color: #45a049; /* Slightly darker green */
+}
+
+button {
+    background-color: #ffdd00; /* Yellow for sports energy */
+    color: #fff;
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #ffbb00; /* Darker yellow */
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button:focus {
+    outline: none;
+}
+
+#result {
+    margin-top: 30px;
+    display: none;
+    font-size: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#score {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#restart {
+    background-color: #ff6347; /* Red sports theme */
+    padding: 12px 25px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#restart:hover {
+    background-color: #ff4500;
+}
+
+.hidden {
+    display: none;
+}
+
+#incorrect-answers-container {
+    margin-top: 30px;
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#incorrect-answers-container h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #D32F2F;
+}
+
+#incorrect-answers-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.incorrect-answer-item {
+    background-color: #FFEBEE;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.incorrect-answer-item p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.incorrect-answer-item .question {
+    font-weight: bold;
+    color: #333;
+}
+
+.incorrect-answer-item .your-answer {
+    color: #D32F2F;
+}
+
+.incorrect-answer-item .correct-answer {
+    color: #388E3C;
+}
+
+#timer {
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    background: #ff7e5f;
+    padding: 8px 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Small Screens (Mobile First) */
+@media (max-width: 600px) {
+    .quiz-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    #question {
+        font-size: 18px;
+    }
+
+    #timer {
+        font-size: 14px;
+    }
+}

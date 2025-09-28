@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Category Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Start Nav -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/q6.jpeg') }}" alt="Logo" width="50" height="40">
+                <span class="project-name">Quiz App</span>
+            </div>
+            <button class="navbar-toggler" id="navbar-toggler">
+                <span class="bar-ico">&#9776;</span>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <li><a href="{{ url_for('auth_app.login') }}" id="hv">Login</a></li>
+                    <li><a href="{{ url_for('auth_app.signup') }} " id="hv">Signup</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Nav -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Main content area goes here -->
+
+
+
+
+
+
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="container">
+
+            <div class="subscribe">
+                <input type="email" placeholder="Enter your email to subscribe...">
+                <button>Subscribe</button>
+            </div>
+
+            <div class="footer-content">
+                <p>&copy; 2024 Quiz App. Designed by Mohamed Behairy. All rights reserved.</p>
+
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://google.com" target="_blank" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="{{ url_for('static', filename='js/science.js') }}"></script>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,233 @@
+[
+    {
+      "question": "Which player is known as 'The Pharaoh'?",
+      "answers": [
+        "Mohamed Salah",
+        "Cristiano Ronaldo",
+        "Lionel Messi",
+        "Neymar"
+      ],
+      "correctAnswer": "Mohamed Salah"
+    },
+    {
+      "question": "Which team won the first-ever Premier League title?",
+      "answers": [
+        "Manchester United",
+        "Liverpool",
+        "Arsenal",
+        "Chelsea"
+      ],
+      "correctAnswer": "Manchester United"
+    },
+    {
+      "question": "Who holds the record for most goals in a single season in the Premier League?",
+      "answers": [
+        "Mohamed Salah",
+        "Cristiano Ronaldo",
+        "Alan Shearer",
+        "Sergio Agüero"
+      ],
+      "correctAnswer": "Mohamed Salah"
+    },
+    {
+      "question": "Which club is known as 'The Red Devils'?",
+      "answers": [
+        "Manchester United",
+        "Liverpool",
+        "Arsenal",
+        "Chelsea"
+      ],
+      "correctAnswer": "Manchester United"
+    },
+    {
+      "question": "Who won the Ballon d'Or in 2021?",
+      "answers": [
+        "Lionel Messi",
+        "Cristiano Ronaldo",
+        "Robert Lewandowski",
+        "Mohamed Salah"
+      ],
+      "correctAnswer": "Lionel Messi"
+    },
+    {
+      "question": "Which country hosted the 2018 FIFA World Cup?",
+      "answers": [
+        "Russia",
+        "Brazil",
+        "Germany",
+        "South Africa"
+      ],
+      "correctAnswer": "Russia"
+    },
+    {
+      "question": "Who is the all-time top scorer for Real Madrid?",
+      "answers": [
+        "Cristiano Ronaldo",
+        "Raúl González",
+        "Karim Benzema",
+        "Alfredo Di Stéfano"
+      ],
+      "correctAnswer": "Cristiano Ronaldo"
+    },
+    {
+      "question": "Which footballer is known as 'The Egyptian King'?",
+      "answers": [
+        "Mohamed Salah",
+        "Ahmed Hegazi",
+        "Mohamed Elneny",
+        "Trezeguet"
+      ],
+      "correctAnswer": "Mohamed Salah"
+    },
+    {
+      "question": "Which club is known as 'The Gunners'?",
+      "answers": [
+        "Arsenal",
+        "Chelsea",
+        "Liverpool",
+        "Manchester City"
+      ],
+      "correctAnswer": "Arsenal"
+    },
+    {
+      "question": "Which country won the 2010 FIFA World Cup?",
+      "answers": [
+        "Spain",
+        "Germany",
+        "Netherlands",
+        "Brazil"
+      ],
+      "correctAnswer": "Spain"
+    },
+    {
+      "question": "Which player is known as 'CR7'?",
+      "answers": [
+        "Cristiano Ronaldo",
+        "Lionel Messi",
+        "Neymar",
+        "Kylian Mbappé"
+      ],
+      "correctAnswer": "Cristiano Ronaldo"
+    },
+    {
+      "question": "Which football club is based in Turin, Italy?",
+      "answers": [
+        "Juventus",
+        "Inter Milan",
+        "AS Roma",
+        "AC Milan"
+      ],
+      "correctAnswer": "Juventus"
+    },
+    {
+      "question": "Which country hosted the 2014 FIFA World Cup?",
+      "answers": [
+        "Brazil",
+        "Germany",
+        "South Africa",
+        "Russia"
+      ],
+      "correctAnswer": "Brazil"
+    },
+    {
+      "question": "Which player is nicknamed 'The Little Magician'?",
+      "answers": [
+        "Andrés Iniesta",
+        "Lionel Messi",
+        "David Silva",
+        "Cesc Fàbregas"
+      ],
+      "correctAnswer": "Andrés Iniesta"
+    },
+    {
+      "question": "Which country won the 2006 FIFA World Cup?",
+      "answers": [
+        "Italy",
+        "Germany",
+        "Brazil",
+        "France"
+      ],
+      "correctAnswer": "Italy"
+    },
+    {
+      "question": "Which player is known as 'The Special One'?",
+      "answers": [
+        "José Mourinho",
+        "Pep Guardiola",
+        "Arsène Wenger",
+        "Carlo Ancelotti"
+      ],
+      "correctAnswer": "José Mourinho"
+    },
+    {
+      "question": "Which country has won the most FIFA Women's World Cups?",
+      "answers": [
+        "USA",
+        "Germany",
+        "Brazil",
+        "Norway"
+      ],
+      "correctAnswer": "USA"
+    },
+    {
+      "question": "Which footballer is nicknamed 'The Iceman'?",
+      "answers": [
+        "Gareth Bale",
+        "Ibrahimovic",
+        "Harry Kane",
+        "Robert Lewandowski"
+      ],
+      "correctAnswer": "Ibrahimovic"
+    },
+    {
+      "question": "Which team won the UEFA Champions League in 2020?",
+      "answers": [
+        "Bayern Munich",
+        "Liverpool",
+        "Paris Saint-Germain",
+        "Real Madrid"
+      ],
+      "correctAnswer": "Bayern Munich"
+    },
+    {
+      "question": "Which club has the nickname 'The Blues'?",
+      "answers": [
+        "Chelsea",
+        "Manchester City",
+        "Everton",
+        "Leicester City"
+      ],
+      "correctAnswer": "Chelsea"
+    },
+    {
+      "question": "Which footballer is known as 'The Brazilian Messi'?",
+      "answers": [
+        "Neymar",
+        "Philippe Coutinho",
+        "Roberto Firmino",
+        "Willian"
+      ],
+      "correctAnswer": "Neymar"
+    },
+    {
+      "question": "Which footballer is known for his famous 'Hand of God' goal?",
+      "answers": [
+        "Diego Maradona",
+        "Lionel Messi",
+        "Cristiano Ronaldo",
+        "Ronaldo Nazário"
+      ],
+      "correctAnswer": "Diego Maradona"
+    },
+    {
+      "question": "Which country won the 1998 FIFA World Cup?",
+      "answers": [
+        "France",
+        "Brazil",
+        "Germany",
+        "Italy"
+      ],
+      "correctAnswer": "France"
+    }
+  ]
+  

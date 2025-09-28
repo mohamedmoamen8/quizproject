@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Multi-Category Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('auth_app.static', filename='css/signup.css') }}">
+
+
+</head>
+
+<body>
+    <h1>Create an Account</h1>
+
+    <!-- Flash messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    <ul>
+        {% for category, message in messages %}
+        <li class="{{ category }}">{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+
+    <form id="signupForm" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" placeholder="Your Username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Your Password" required><br><br>
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password"
+            required><br><br>
+
+        <button type="submit" id="btnSubmit" disabled>Sign Up</button>
+    </form>
+
+    <p>Already have an account? <a href="{{ url_for('auth_app.login') }}">Login here</a></p>
+    <script src="{{ url_for('auth_app.static', filename='js/signup.js') }}"></script>
+
+</body>
+
+</html>

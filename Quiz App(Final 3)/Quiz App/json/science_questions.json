@@ -1,0 +1,182 @@
+[
+    {
+        "question": "What is the chemical symbol for water?",
+        "answers": [
+            "H2O",
+            "CO2",
+            "O2",
+            "H2"
+        ],
+        "correctAnswer": "H2O"
+    },
+    {
+        "question": "Who developed the theory of relativity?",
+        "answers": [
+            "Isaac Newton",
+            "Albert Einstein",
+            "Galileo Galilei",
+            "Niels Bohr"
+        ],
+        "correctAnswer": "Albert Einstein"
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "answers": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Endoplasmic Reticulum"
+        ],
+        "correctAnswer": "Mitochondria"
+    },
+    {
+        "question": "What is the chemical symbol for gold?",
+        "answers": [
+            "Au",
+            "Ag",
+            "Pb",
+            "Fe"
+        ],
+        "correctAnswer": "Au"
+    },
+    {
+        "question": "Who is known as the father of modern physics?",
+        "answers": [
+            "Isaac Newton",
+            "Albert Einstein",
+            "Nikola Tesla",
+            "Galileo Galilei"
+        ],
+        "correctAnswer": "Albert Einstein"
+    },
+    {
+        "question": "What is the most abundant gas in Earth's atmosphere?",
+        "answers": [
+            "Oxygen",
+            "Carbon Dioxide",
+            "Nitrogen",
+            "Argon"
+        ],
+        "correctAnswer": "Nitrogen"
+    },
+    {
+        "question": "What is the process by which plants make their own food?",
+        "answers": [
+            "Respiration",
+            "Photosynthesis",
+            "Transpiration",
+            "Fermation"
+        ],
+        "correctAnswer": "Photosynthesis"
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "answers": [
+            "6",
+            "8",
+            "12",
+            "14"
+        ],
+        "correctAnswer": "6"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "answers": [
+            "Venus",
+            "Mars",
+            "Jupiter",
+            "Saturn"
+        ],
+        "correctAnswer": "Mars"
+    },
+    {
+        "question": "What is the largest organ in the human body?",
+        "answers": [
+            "Heart",
+            "Lungs",
+            "Skin",
+            "Liver"
+        ],
+        "correctAnswer": "Skin"
+    },
+    {
+        "question": "What is the chemical symbol for sodium?",
+        "answers": [
+            "Na",
+            "K",
+            "S",
+            "Cl"
+        ],
+        "correctAnswer": "Na"
+    },
+    {
+        "question": "Who discovered the law of gravity?",
+        "answers": [
+            "Galileo Galilei",
+            "Isaac Newton",
+            "Albert Einstein",
+            "Nikola Tesla"
+        ],
+        "correctAnswer": "Isaac Newton"
+    },
+    {
+        "question": "What is the most common element in the Earth's crust?",
+        "answers": [
+            "Iron",
+            "Oxygen",
+            "Silicon",
+            "Aluminum"
+        ],
+        "correctAnswer": "Oxygen"
+    },
+    {
+        "question": "Which scientist proposed the theory of evolution?",
+        "answers": [
+            "Charles Darwin",
+            "Gregor Mendel",
+            "Louis Pasteur",
+            "Marie Curie"
+        ],
+        "correctAnswer": "Charles Darwin"
+    },
+    {
+        "question": "What is the study of fossils called?",
+        "answers": [
+            "Zoology",
+            "Paleontology",
+            "Botany",
+            "Geology"
+        ],
+        "correctAnswer": "Paleontology"
+    },
+    {
+        "question": "What element does 'O' represent on the periodic table?",
+        "answers": [
+            "Oxygen",
+            "Osmium",
+            "Oganesson",
+            "Ozone"
+        ],
+        "correctAnswer": "Oxygen"
+    },
+    {
+        "question": "What gas do plants take in during photosynthesis?",
+        "answers": [
+            "Oxygen",
+            "Carbon Dioxide",
+            "Nitrogen",
+            "Methane"
+        ],
+        "correctAnswer": "Carbon Dioxide"
+    },
+    {
+        "question": "Which part of the brain controls balance and coordination?",
+        "answers": [
+            "Cerebrum",
+            "Cerebellum",
+            "Medulla",
+            "Thalamus"
+        ],
+        "correctAnswer": "Cerebellum"
+    }
+]

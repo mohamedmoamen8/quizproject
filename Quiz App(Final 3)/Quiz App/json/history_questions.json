@@ -1,0 +1,202 @@
+[
+    {
+        "question": "Who was the first president of the United States?",
+        "answers": [
+            "George Washington",
+            "Abraham Lincoln",
+            "Thomas Jefferson",
+            "John Adams"
+        ],
+        "correctAnswer": "George Washington"
+    },
+    {
+        "question": "What year did World War I begin?",
+        "answers": [
+            "1912",
+            "1914",
+            "1916",
+            "1918"
+        ],
+        "correctAnswer": "1914"
+    },
+    {
+        "question": "Who was the first emperor of China?",
+        "answers": [
+            "Qin Shi Huang",
+            "Liu Bang",
+            "Emperor Wu",
+            "Sun Tzu"
+        ],
+        "correctAnswer": "Qin Shi Huang"
+    },
+    {
+        "question": "Who wrote the 'Iliad' and the 'Odyssey'?",
+        "answers": [
+            "Homer",
+            "Socrates",
+            "Aristotle",
+            "Plato"
+        ],
+        "correctAnswer": "Homer"
+    },
+    {
+        "question": "Which empire was ruled by Julius Caesar?",
+        "answers": [
+            "Roman Empire",
+            "Mongol Empire",
+            "Ottoman Empire",
+            "British Empire"
+        ],
+        "correctAnswer": "Roman Empire"
+    },
+    {
+        "question": "In which year did the Titanic sink?",
+        "answers": [
+            "1910",
+            "1911",
+            "1912",
+            "1913"
+        ],
+        "correctAnswer": "1912"
+    },
+    {
+        "question": "Which country was the first to grant women the right to vote?",
+        "answers": [
+            "New Zealand",
+            "United States",
+            "Australia",
+            "Canada"
+        ],
+        "correctAnswer": "New Zealand"
+    },
+    {
+        "question": "Who was the first woman to fly solo across the Atlantic Ocean?",
+        "answers": [
+            "Amelia Earhart",
+            "Harriet Quimby",
+            "Bessie Coleman",
+            "Jacqueline Cochran"
+        ],
+        "correctAnswer": "Amelia Earhart"
+    },
+    {
+        "question": "Which ancient civilization built the pyramids?",
+        "answers": [
+            "Egyptians",
+            "Romans",
+            "Greeks",
+            "Mayans"
+        ],
+        "correctAnswer": "Egyptians"
+    },
+    {
+        "question": "What year did the Berlin Wall fall?",
+        "answers": [
+            "1987",
+            "1989",
+            "1991",
+            "1993"
+        ],
+        "correctAnswer": "1989"
+    },
+    {
+        "question": "Who was the leader of the Soviet Union during World War II?",
+        "answers": [
+            "Joseph Stalin",
+            "Vladimir Lenin",
+            "Leon Trotsky",
+            "Mikhail Gorbachev"
+        ],
+        "correctAnswer": "Joseph Stalin"
+    },
+    {
+        "question": "Which country was known as the 'Sick Man of Europe' in the 19th century?",
+        "answers": [
+            "Ottoman Empire",
+            "Austria-Hungary",
+            "Russia",
+            "Germany"
+        ],
+        "correctAnswer": "Ottoman Empire"
+    },
+    {
+        "question": "Who was the first woman to become a British Prime Minister?",
+        "answers": [
+            "Margaret Thatcher",
+            "Theresa May",
+            "Harriet Harman",
+            "Ellen Wilkinson"
+        ],
+        "correctAnswer": "Margaret Thatcher"
+    },
+    {
+        "question": "In which year did the French Revolution begin?",
+        "answers": [
+            "1775",
+            "1789",
+            "1799",
+            "1804"
+        ],
+        "correctAnswer": "1789"
+    },
+    {
+        "question": "Who was the longest-reigning monarch of England?",
+        "answers": [
+            "Queen Elizabeth II",
+            "Queen Victoria",
+            "King George III",
+            "King Henry VIII"
+        ],
+        "correctAnswer": "Queen Elizabeth II"
+    },
+    {
+        "question": "Which event marked the start of World War II?",
+        "answers": [
+            "The invasion of Poland",
+            "The assassination of Archduke Ferdinand",
+            "The bombing of Pearl Harbor",
+            "The signing of the Treaty of Versailles"
+        ],
+        "correctAnswer": "The invasion of Poland"
+    },
+    {
+        "question": "Which civilization is famous for creating the wheel?",
+        "answers": [
+            "Sumerians",
+            "Romans",
+            "Egyptians",
+            "Greeks"
+        ],
+        "correctAnswer": "Sumerians"
+    },
+    {
+        "question": "Who was the first man to step on the moon?",
+        "answers": [
+            "Neil Armstrong",
+            "Buzz Aldrin",
+            "Yuri Gagarin",
+            "Michael Collins"
+        ],
+        "correctAnswer": "Neil Armstrong"
+    },
+    {
+        "question": "In what year did the United States declare independence from Britain?",
+        "answers": [
+            "1776",
+            "1783",
+            "1791",
+            "1800"
+        ],
+        "correctAnswer": "1776"
+    },
+    {
+        "question": "Who was the first female pharaoh of ancient Egypt?",
+        "answers": [
+            "Hatshepsut",
+            "Cleopatra",
+            "Nefertiti",
+            "Merneith"
+        ],
+        "correctAnswer": "Hatshepsut"
+    }
+]
