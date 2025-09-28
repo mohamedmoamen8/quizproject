@@ -2,7 +2,6 @@
 
 A simple **Quiz Web Application** built with **Flask (Python)** for the backend and **HTML, CSS, JavaScript** for the frontend.  
 The app supports **multiple quiz categories**, keeps track of scores, and includes a **leaderboard and ranking system**.
-focus in backend and flask (leaderboard- and save the results)
 ---
 
 ## 🚀 Features
