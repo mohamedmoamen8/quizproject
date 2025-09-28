@@ -68,7 +68,9 @@ after
 
 
 <img width="1366" height="768" alt="Screenshot 2025-09-28 160919" src="https://github.com/user-attachments/assets/e9b59c5a-c83e-4a8c-8f5c-686c8c2b1f40" />
-<img width="1366" height="768" alt="Screenshot 2025-09-28 160926" src="https://github.com/user-attachments/assets/8b3b6632-8f37-4f48-9f08-de54df692a65" />
+<img width="1366" height="768" alt="Screenshot 2025-09-28 161947" src="https://github.com/user-attachments/assets/f2f1e019-f714-4fe0-98d4-90bfa0fe48f4" />
+
+
 
 🔮 Future Improvements
 improve User authentication (login/signup).
@@ -81,4 +83,4 @@ More question types (True/False, Multiple answers, etc.).
 
 REST API for mobile app integration.
 
- Better UI/UX design( by using react for front e)
+ Better UI/UX design( by using react for front end)
